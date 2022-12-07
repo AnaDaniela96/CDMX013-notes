@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+font-family: 'Pacifico', cursive;
+font-family: 'Playfair Display', serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

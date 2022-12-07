@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,
+body{
+  background-color:#FCFEFB;
+  color: #272E32;
+  margin-top: 40px;
+}
+.form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 800%;
+}
+.buttonStyle{
+  background-color: #E5E1DE;
+  width: 200px;
+  height: 49px;
+  font-family:'Playfair Display', serif;
+  font-size: 100%;
+}
+footer{
+  margin-bottom: 50px;
+}
