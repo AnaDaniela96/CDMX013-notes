@@ -5,7 +5,7 @@ import {
   //   signInWithRedirect,
   //   signOut,
   //   onAuthStateChanged,
-} from "firebase/auth";
+} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 import { auth } from "./config";
 
 const provider = new GoogleAuthProvider();
