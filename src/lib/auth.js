@@ -21,6 +21,7 @@ export const loginWithGoogle = () => {
       // The signed-in user info.
       // eslint-disable-next-line
       const user = result.user;
+      console.log('Hola '+ user.email)
       // ...
     })
     .catch((error) => {
