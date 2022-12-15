@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-function Welcome(props){
+export default function Feed(props) {
   console.log(props);
   const navigate = useNavigate();
 
@@ -10,7 +10,7 @@ function Welcome(props){
 
 return(
   <>
-    <h1>Welcome</h1>
+    <h1>Feed</h1>
     <button 
       type='button'
       onClick={() => {

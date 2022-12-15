@@ -9,9 +9,8 @@ export default function Login() {
         src="https://i.postimg.cc/c1Trf3qD/btn-google-signin-light-normal-web.png"
         alt=""
         onClick={() =>
-          loginWithGoogle()
-            .then((user) => console.log(user))
-            .catch((error) => console.log(error))
+          loginWithGoogle().then((user) => console.log(user))
+          .catch((error) => console.log(error))
         }
       />
       <footer>Created by @anadaniela for Laboratoria-2022</footer>
