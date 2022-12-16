@@ -6,15 +6,31 @@ html,
 body{
   background-color:#FCFEFB;
   color: #272E32;
-  font-family: Lato, sans-serif;
   margin-top: 40px;
 }
 .form{
   display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
-#logInGoogle{
- 
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 800%;
+}
+.buttonStyle{
+  background-color: #E5E1DE;
+  width: 200px;
+  height: 49px;
+  font-family:'Playfair Display', serif;
+  font-size: 100%;
+}
+.singOffButton {
+  position: fixed;
+  right: 5%;
+  width: 5%;
+  height: 5%;
+}
+footer{
+  margin-bottom: 50px;
 }

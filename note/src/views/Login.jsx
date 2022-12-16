@@ -10,10 +10,11 @@ export default function Login() {
         alt=""
         onClick={() =>
           loginWithGoogle()
-            .then((user) => console.log(user))
-            .catch((error) => console.log(error))
+          .then((user) => console.log(user))
+          .catch((error) => console.log(error))
         }
       />
+      <br/>
       <footer>Created by @anadaniela for Laboratoria-2022</footer>
     </div>
   );

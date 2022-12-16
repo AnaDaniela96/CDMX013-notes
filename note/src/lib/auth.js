@@ -3,9 +3,9 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   //   signInWithRedirect,
-  //   signOut,
+  signOut,
   //   onAuthStateChanged,
-} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+} from "firebase/auth";
 import { auth } from "./config";
 
 const provider = new GoogleAuthProvider();
@@ -21,6 +21,7 @@ export const loginWithGoogle = () => {
       // The signed-in user info.
       // eslint-disable-next-line
       const user = result.user;
+      console.log('Hola '+ user.email)
       // ...
     })
     .catch((error) => {
@@ -38,3 +39,12 @@ export const loginWithGoogle = () => {
       // ...
     });
 };
+
+
+export const SignOut = () => {
+  signOut(auth).then(() => {
+    // Sign-out successful.
+  }).catch((error) => {
+    // An error happened.
+  });
+}
