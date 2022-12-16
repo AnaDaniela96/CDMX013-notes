@@ -9,6 +9,8 @@ import Login from "./views/Login";
 import Welcome from "./views/Welcome";
 import NotFound from "./views/NotFound";
 import About from "./views/About";
+import CreateNote from "./views/CreateNote";
+
 //import Feed from "./views/Feed";
 
 
@@ -31,10 +33,14 @@ function App() {
       {user?
       <>
         <Route path="/" element={<Welcome />} />
+        <Route path="/createNote" element={<CreateNote />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </>
-      :<Route path="/" element={<Login/>} />
+      :<>
+        <Route path="/" element={<Login/>} />
+        <Route path="*" element={<NotFound />} />
+      </>
       }
     </Routes>
   );

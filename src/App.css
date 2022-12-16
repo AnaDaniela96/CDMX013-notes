@@ -25,6 +25,12 @@ h1{
   font-family:'Playfair Display', serif;
   font-size: 100%;
 }
+.singOffButton {
+  position: fixed;
+  right: 5%;
+  width: 5%;
+  height: 5%;
+}
 footer{
   margin-bottom: 50px;
 }
