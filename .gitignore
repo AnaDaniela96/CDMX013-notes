@@ -4,6 +4,8 @@
 package-lock.json
 package.json
 src/lib/config.js
+src/lib/firestore.js
+src/lib/auth.js
 # dependencies
 /node_modules
 /.pnp
