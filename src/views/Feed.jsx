@@ -10,14 +10,14 @@ export default function Feed(props) {
 
 return(
   <>
-    <h1>Feed</h1>
+    <p>Aquí verás tus notas</p>
     <button 
       type='button'
       onClick={() => {
-        navigateTo('/about');
+        navigateTo('/');
       }}
       >
-      About
+      Welcome
       </button>
   </>
 );

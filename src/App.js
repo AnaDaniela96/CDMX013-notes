@@ -9,9 +9,8 @@ import Login from "./views/Login";
 import Welcome from "./views/Welcome";
 import NotFound from "./views/NotFound";
 import About from "./views/About";
-//import Feed from "./views/Feed";
-
-
+import CreateNote from "./views/CreateNote";
+import Feed from "./views/Feed";
 
 function App() {
   const [user, setUser] = useState(null); //{user: 'daniela'}
@@ -20,6 +19,8 @@ function App() {
   onAuthStateChanged(auth, (userFirebase) => {
     if (userFirebase) {
       setUser(userFirebase)
+      console.log(userFirebase.displayName)
+    
     } else {
       setUser(null)
     }
@@ -31,10 +32,16 @@ function App() {
       {user?
       <>
         <Route path="/" element={<Welcome />} />
+        <Route path="/createNote" element={<CreateNote />} />
         <Route path="/about" element={<About />} />
+        <Route path="/feed" element={<Feed />} />
         <Route path="*" element={<NotFound />} />
       </>
-      :<Route path="/" element={<Login/>} />
+      :<>
+        <Route path="/" element={<Login/>} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/about" element={<About />} />
+      </>
       }
     </Routes>
   );

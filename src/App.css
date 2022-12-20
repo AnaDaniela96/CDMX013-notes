@@ -1,30 +1,105 @@
 *{
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
-html,
 body{
   background-color:#FCFEFB;
   color: #272E32;
-  margin-top: 40px;
 }
-.form{
+/**/
+  /**/
+    /**/
+      /**/
+        /*Componentes*/
+
+/*header*/
+.header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nameUser{
+  font-family: 'Source ';
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 34px;
+
+  height: 5%;
+  width: 50%;
+  padding: 2%;
+}
+.singOffButton{
+  height: 12%;
+  width: 4%;
+  position: relative;
+  padding: 2%;
+}
+ /*footer*/
+.footer{
+  text-align: center;
+  padding: 2%;
+}
+h6{
+  font-family: 'Source Serif pro';
+  font-size: 23px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+/**/
+  /**/
+    /**/
+      /**/
+        /*estilo para los div de cada vista.*/
+.views{
   display:flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: #FCFEFB; /*#FCFEFB*/
 }
+                                  /*En orden de uso*/
+  /*Primera vista: Login*/
 h1{
-  font-family: 'Pacifico', cursive;
-  font-size: 800%;
+  font-family: 'Pacifico';
+  font-size: 148px;
+  line-height: 260px;
+
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
 }
-.buttonStyle{
-  background-color: #E5E1DE;
-  width: 200px;
-  height: 49px;
-  font-family:'Playfair Display', serif;
-  font-size: 100%;
+.google-logo{
+  width: 272px;
+  height: 82px;
 }
-footer{
-  margin-bottom: 50px;
+  /*Segunda vista: Welcome*/
+.btnNewNote{
+  display: flex;
+  justify-content: center;
+ 
+  height: 5%;
+  width:4%
 }
+      /**/
+         /**/
+            /**/
+               /**/
+                  /**/
+    /**/
+
+    /*
+
+
+.singOffButton {
+  width: 100%;
+  height: 100%;
+}*/
+
+

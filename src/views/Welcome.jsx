@@ -1,20 +1,22 @@
-import { SignOut } from '../lib/auth.js';
+
+import { useNavigate } from "react-router-dom";
+
+import Header from '../components/Header.jsx';
+import Footer from "../components/Footer.jsx";
 
 export default function Welcome() {
-  const signOff = document.createElement('img');
-
-  signOff.setAttribute('src', 'https://i.postimg.cc/HW6M6BCg/Sign-off.png');
+  
+  const navigate = useNavigate()
   return (
-    <div>
-      <p>Bienvenida a tus notas aquí tienes que llegar cuando entres sesión. Una vez autentificada llegas acá.</p>
-      <img
-      className="singOffButton"
-        src="https://i.postimg.cc/c1Trf3qD/btn-google-signin-light-normal-web.png"
+    <div className="views">
+    <Header/>
+       <img
+        className="btnNewNote"
+        src='https://i.postimg.cc/7Lrp7pBt/edit-square-FILL0-wght400-GRAD0-opsz48.png'
         alt=""
-        onClick={() =>
-          SignOut()
-        }
+        onClick={() => navigate('createNote')}
       />
+    <Footer/>
     </div>
   );
 }

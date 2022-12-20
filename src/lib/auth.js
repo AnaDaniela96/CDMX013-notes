@@ -21,6 +21,7 @@ export const loginWithGoogle = () => {
       // The signed-in user info.
       // eslint-disable-next-line
       const user = result.user;
+      console.log(result)
       console.log('Hola '+ user.email)
       // ...
     })
@@ -39,7 +40,6 @@ export const loginWithGoogle = () => {
       // ...
     });
 };
-
 
 export const SignOut = () => {
   signOut(auth).then(() => {
