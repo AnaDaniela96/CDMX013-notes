@@ -6,7 +6,7 @@ export default function Header() {
   return(
     <header className='header'>
     <p className='nameUser'>
-      UserName
+      userName
     </p>
     <img
       className="singOffButton"
